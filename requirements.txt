@@ -1,0 +1,21 @@
+# For Data Handling
+pandas
+
+# For Web Scraping and Browser Automation
+selenium
+webdriver-manager
+
+# For Database Connection (SQLAlchemy is the ORM, and a driver is needed)
+SQLAlchemy
+mysql-connector-python
+
+# For Time-Series Forecasting
+prophet
+
+# For visualizing Prophet model's results in python
+matplotlib
+seaborn
+
+# Optional: For running notebooks
+jupyterlab
+notebook
