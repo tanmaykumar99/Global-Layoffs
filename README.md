@@ -56,7 +56,16 @@ Project_Root/
 
 ## How to Use This Project
 
+**Clone the repository:**
+    ```
+    git clone https://github.com/tanmaykumar99/amazon-sales-analysis.git
+    ```
+
 1.  **Scrape Data**: Run the Python scraping scripts located in the `python` directory called 'Layoffsfyi_Data_Pull' to gather the initial dataset.
 2.  **Database and ETL**: Use the SQL scripts in `sql/queries/` to set up your MySQL database, clean the data, and perform initial analysis.
 3.  **Visualize**: Open the Tableau workbooks in `tableau/workbooks/` to explore the interactive visualizations of the layoff data.
 4.  **Predict**: Execute the Python scripts in `python` dir called 'Prediction_Model_2026' to generate layoff forecasts for 2026.
+
+## Future Enhancements
+
+*   **Bug Fixes:** Continue fixing the Prophet model to make the prediction more accurate over time, as more data flows in to train the model.
