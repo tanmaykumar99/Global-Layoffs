@@ -58,7 +58,7 @@ Project_Root/
 
 **Clone the repository:**
     ```
-    git clone https://github.com/tanmaykumar99/amazon-sales-analysis.git
+    git clone https://github.com/tanmaykumar99/Portfolio.Global-Layoffs.git
     ```
 
 1.  **Scrape Data**: Run the Python scraping scripts located in the `python` directory called 'Layoffsfyi_Data_Pull' to gather the initial dataset.
