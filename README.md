@@ -1,22 +1,27 @@
 # Global Layoffs Analysis and Prediction
 
-## Overview
+## Project Overview
 
 This project provides a comprehensive analysis of global layoff trends. The workflow begins with scraping publicly available layoff data, creating an automated pipeline into a MySQL DB, followed by cleaning and querying the data in MySQL. The processed data is then visualized using Tableau to uncover insights and create a data story. Finally, a predictive model using Python's Prophet library forecasts future layoff trends for 2026, broken down by month, company, and industry.
 
-## Prerequisites
+## Live Dashboard
 
-To run this project, you will need the following installed:
+An interactive Tableau dashboard has been developed to allow for dynamic filtering and exploration of the layoffs data. The dashboard allows for an in-depth analysis across different dimensions of the dataset for a deeper understanding of layoff trends.
 
-*   **Python 3.8+**
-*   **Tableau for Desktop
-*   **MySQL Server 8.0+**: A running instance of MySQL is required to store and query the data.
-*   All Python packages listed in the `requirements.txt` file. You can install them by running:
-    ```
-    pip install -r requirements.txt
-    ```
+![Dashboard Preview](Tableau/images/dashboard.gif)
 
-## Project Stages
+## Tech Stack & Tools
+
+*   **Data Extraction:** Python (Selenium)
+*   **Database:** MySQL
+*   **Data Cleaning, Transformation, EDA:** SQL
+*   **Time Series Forecasting:** Prophet
+*   **Data Visualization & Dashboarding:** Tableau
+*   **Version Control:** Git & GitHub
+
+## Project Pipeline
+
+This project follows a structured, multi-stage data pipeline:
 
 1.  **Data Scraping**: A Python script dynamically scrapes the global layoffs table from the source website.
 2.  **Data Cleaning and SQL Analysis**: The raw data is cleaned and loaded into a MySQL database. SQL queries are then used to generate tables and extract key insights.
@@ -25,36 +30,13 @@ To run this project, you will need the following installed:
 5.  **Data Storytelling**: A narrative is built around the Tableau visualizations to communicate the findings effectively.
 6.  **Predictive Modeling**: A time-series forecasting model is developed in Python using Prophet library to predict layoff trends for 2026.
 
-## Folder Structure
+## Data Source
 
-The project is organized into the following folder structure to maintain clarity and separation of concerns:
+The dataset used for this analysis was dynamically scraped from layoffs.fyi, containing layoffs data since 2020 to date, with details on Company name, date of layoff, industry, stage, country, location HQ, etc.
 
-Project_Root/
-├── .gitignore
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── Datasets/
-│ ├── cleaned_data/
-│ └── raw_data/
-├── Data_Story/
-|  ├── insights/
-├── python/
-| ├── modeling/
-│ ├── images/
-│ ├── scraping/
-│ └── README.md/
-├── SQL/
-│ ├── README.md
-│ ├── exports/
-│ └── queries/
-│ └── images/
-│ └── Query_doc/
-└── Tableau/
-  └── twb_workbook/
-  └── sample_screenshot/
+## Setup & Installation
 
-## How to Use This Project
+To replicate this project locally, please follow these steps:
 
 **Clone the repository:**
     ```
