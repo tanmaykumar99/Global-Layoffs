@@ -6,6 +6,8 @@ This project provides a comprehensive analysis of global layoff trends. The work
 
 ## Live Dashboard
 
+(Given below is a gif to demonstrate the dynamic elements of the dashboard)
+
 An interactive Tableau dashboard has been developed to allow for dynamic filtering and exploration of the layoffs data. The dashboard allows for an in-depth analysis across different dimensions of the dataset for a deeper understanding of layoff trends.
 
 ![Dashboard Preview](Tableau/images/dashboard.gif)
